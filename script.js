@@ -87,6 +87,14 @@ function playGame(num) {
         playRound(compSelection, humanSelection);
         count ++;
     }
+
+    if (humanScore === compScore) {
+        console.log("This match end in a draw!");
+    } else if (humanScore > compScore) {
+        console.log("You win the match!");
+    } else {
+        console.log("You lose the match!");
+    }
 }
 
 let time = prompt("How many times?");
